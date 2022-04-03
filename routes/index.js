@@ -26,7 +26,7 @@ router.post("/", function (req, res, next) {
             const images = []
             for(const file of req.files) {
                 const pathPart = file.path.split("\\")
-                const path = pathPart[4] + "/" + pathPart[5]
+                const path = pathPart[1] + "/" + pathPart[2]
                 console.log(path)
                 images.push(path)
             }

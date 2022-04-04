@@ -15,17 +15,17 @@
         <form action="/" method="post"  enctype="multipart/form-data">
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Tên xe</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" name="name" minlength="1">
+                <input type="text" class="form-control" id="exampleFormControlInput1" name="name" required >
             </div>
 
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Giá Xe</label>
-                <input type="number" class="form-control" id="exampleFormControlInput1" name="price" minlength="1">
+                <input type="number" class="form-control" id="exampleFormControlInput1" name="price" required>
             </div>
 
             <div class="mb-5">
                 <label for="formFileLg" class="form-label">Tải file ảnh </label>
-                <input class="form-control form-control-lg" id="formFileLg" type="file" name="images" multiple >
+                <input class="form-control form-control-lg" id="formFileLg" type="file" name="images" multiple required >
             </div>
 
             <div class="d-grid gap-2 col-6 mx-auto">

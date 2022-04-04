@@ -10,8 +10,10 @@
 <body>
 
 <div class="container text-center">
-    <p><span class="fw-bold text-center">TÊN XE: </span><%= car.name %></p>
-    <p><span class="fw-bold text-center">GIÁ XE: </span><%= car.price %></p>
+    <%- include('utils/header') %>
+    <p class="text-center mt-5 mb-3 fs-1 fw-bold">KẾT QUẢ</p>
+    <p class="text-center"><span class="fw-bold">TÊN XE: </span><%= car.name %></p>
+    <p class="text-center"><span class="fw-bold">GIÁ XE: </span><%= car.price %></p>
     <div class="row justify-content-evenly">
         <%for(const image of car.images){%>
             <div class="col-2" style="display: flex">

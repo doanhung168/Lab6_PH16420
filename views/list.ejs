@@ -13,12 +13,12 @@
     <div class="container">
         <%for(const car of cars) {%>
             <div class="card my-4 p-4">
-                <p><%= car.name %></p>
-                <p><%= car.price %></p>
+                <p>TÊN XE: <%= car.name %></p>
+                <p>GIÁ XE: <%= car.price %></p>
                 <div class="row justify-content-evenly">
                     <%for(const image of car.images){%>
                         <div class="col-2">
-                            <img src="<%= image %>" class="w-100 flex-row">
+                            <img src="<%= image %>" class="w-100 flex-column">
                         </div>
                     <%}%>
                 </div>

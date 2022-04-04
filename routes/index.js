@@ -48,6 +48,14 @@ router.post("/", function (req, res, next) {
     })
 })
 
+router.get('/list', (req, res, next) => {
+    Car.find()
+        .then(result => {
+            return res.render('list', {cars: result})
+        })
+        .catch(err => console.log(err))
+})
+
 module.exports = router;
 
 
